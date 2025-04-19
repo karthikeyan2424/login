@@ -18,17 +18,15 @@
             {{ form.description.label_tag }}
             {{ form.description }}
         </div>
-
+        <br><br>
         <div class="form-group">
-            <label for="id_dayin">Created In:</label>
-            {{ form.dayin }}
+            Date:<input type="date">
         </div>
-
+        <br>
         <div class="form-group form-check">
-            {{ form.complete }}
-            {{ form.complete.label_tag }}
+           Complete: {{ form.complete }}
+    
         </div>
-
         <br>
         <input class="btn btn-primary" type="submit" value="Submit">
     </form>

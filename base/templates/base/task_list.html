@@ -27,6 +27,7 @@
     </form>
     {% if tasks|length > 0 %}
     <a id="add-link" href="{% url 'task-create' %}">&#x2b;</a>
+    
     {% endif %}
 </div>
 
@@ -51,10 +52,7 @@
             {% endif %}
 
             {% if task.created %}
-            <div class="task-created-time" style="margin-left: 15px; font-size: 0.9em; color: #777;">
-                Created on: {{ task.created|date:"M d, Y H:i" }}
-            </div>
-            {% endif %}
+            {{ form.dayin }} {% endif %}
         </div>
 
         <!-- DESCRIPTION BELOW TITLE -->

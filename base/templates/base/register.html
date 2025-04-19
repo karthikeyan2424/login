@@ -16,7 +16,11 @@
 
         <label>{{form.password2.label}}</label>
         {{form.password2}}
-        <input style="margin-top:10px ;" class="button" type="submit" value="Register">
+         <a href="{% url 'login' %}" style="margin-top: 10px; padding: 10px 20px; display: inline-block; text-decoration: none; border-radius: 5px;" class="button">
+  Register
+</a>
+
+
     </form>
     <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
 </div>
